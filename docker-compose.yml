@@ -1,0 +1,11 @@
+vesion: "3.9"
+
+services: 
+  nodetwich:
+    images: node
+    container_name: projectnode
+    port: 
+      -5000:3000
+      build: .
+      command: node server.js
+    db:
